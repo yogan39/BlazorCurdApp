@@ -1,0 +1,70 @@
+﻿
+@page "/EditEmployee/{CurrentID}"
+@using BlazorCurdApp.Data
+@inject EmployeeService objService
+@inject NavigationManager NavigationManager
+
+<h2>Update Employee</h2>
+
+<hr />
+
+<form>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <input form="Name" class="form-control" @bind="@objemp.EmployeeID" />
+            </div>
+            <div class="form-group">
+                <label for="Name" class="control-label">Name</label>
+                <input form="Name" class="form-control" @bind="@objemp.Name" />
+            </div>
+            <div class="form-group">
+                <label for="Gender" class="control-label">Name</label>
+                <select @bind="@objemp.Gender" class="form-control">
+                    <option>....Select Gender....</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="City" class="control-label">Name</label>
+                <input form="City" class="form-control" @bind="@objemp.City" />
+            </div>
+            <div class="form-group">
+                <label for="Email" class="control-label">Name</label>
+                <input form="Email" class="form-control" @bind="@objemp.Email" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@UpdateEmp" value="Update" />
+                <input type="button" class="btn btn-primary" @onclick="@Cancel" value="Cancel" />
+            </div>
+        </div>
+    </div>
+
+</form>
+
+@code {
+    [Parameter]
+    public string CurrentID { get; set; }
+    Employinfo objemp = new Employinfo();
+
+    protected override async Task OnInitializedAsync()
+    {
+        objemp = await Task.Run(() => objService.GetEmpbyID(Convert.ToInt32(CurrentID)));
+    }
+
+    protected void UpdateEmp()
+    {
+        objService.UpdateEmp(objemp);
+        NavigationManager.NavigateTo("Employee");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("Employee");
+    }
+}
