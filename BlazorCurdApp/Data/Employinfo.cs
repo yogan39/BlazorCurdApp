@@ -10,6 +10,7 @@ namespace BlazorCurdApp.Data
     {
         [Key]
         public int EmployeeID { get; set; }
+        
         [Required (ErrorMessage = "Name is Required")]
         [MinLength(3)]
         public string Name {get;set; }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LggJMstreJGx44VT9HP/DMaDw6S+58n16/5hDY7OEIKHYun3+XKjTqMJk1RafwNGBO/NIcpKgDjGW4vQbEH54w==",
+  "dgSpecHash": "L02HX2ItZi3SkucAENVgyVbrnxJ/+EcNyTwEMAMKQ7s/sCSVKeKGfAN3JwUoY/5ERS3r3K8HJSa4Sekj7z1evA==",
   "success": true,
   "projectFilePath": "D:\\Blazor\\BlazorCurdApp\\BlazorCurdApp\\BlazorCurdApp.csproj",
   "expectedPackageFiles": [
@@ -91,7 +91,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Yogan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
 }
